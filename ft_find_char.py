@@ -1,38 +1,38 @@
-def ft_len(a):
-    b = 0
-    for i in a:
-        b += 1
-    return (b)
+def ft_len(str):
+    a = 0
+    for i in str:
+        a += 1
+    return (a)
 
 
-def ft_find_char(char, a):
-    c = ft_len(a)
-    n = 0
-    x = 0
+def ft_find_char(char, str):
+    d = ft_len(str)
+    k = 0
+    i = 0
     b = char
-    while c > x:
-        if a[x] == b:
-            n = n + 1
-        x = x + 1
-    if n == 1:
-        x = 0
-        while c > x:
-            if a[x] == b:
-                return(x)
-            x = x + 1
-    elif n >= 2:
-        x = 0
-        max = n
-        n = 0
-        while c > x:
-            if a[x] == b:
-                n = n + 1
-                if n == 1:
-                    o = x
-                if n == max:
-                    p = x
-            x = x + 1
-        return o,p
+    while d > i:
+        if str[i] == b:
+            k = k + 1
+        i = i + 1
+    if k == 1:
+        i = 0
+        while d > i:
+            if str[i] == b:
+                return (i)
+            i = i + 1
+    elif k >= 2:
+        i = 0
+        max = k
+        k = 0
+        while d > i:
+            if str[i] == b:
+                k = k + 1
+                if k == 1:
+                    i1 = i
+                if k == max:
+                    i2 = i
+            i = i + 1
+        return i1, i2
     else:
         return False
 
