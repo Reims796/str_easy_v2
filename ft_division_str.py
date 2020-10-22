@@ -1,23 +1,22 @@
-def ft_len(a):
-    b = 0
-    for i in a:
-        b += 1
-    return (b)
+def ft_len(str):
+    a = 0
+    for i in str:
+        a += 1
+    return (a)
 
 
-def ft_division_str(a):
-    c = ft_len(a)
-    x = ''
-    z = 0
-    n = c
-    if c % 2 == 0:
-        c = c // 2
-        x = a[c:n] + a[z:c]
-        return x
+def ft_division_str(str):
+    d = ft_len(str)
+    s = ''
+    i = 0
+    z = d
+    if d % 2 == 0:
+        d = d // 2
+        s = str[d:z] + str[i:d]
+        return s
     else:
-        c = c // 2 + 1
-        x = a[c:n] + a[z:c]
-        return x
-
+        d = d // 2 + 1
+        s = str[d:z] + str[i:d]
+        return s
 
 
