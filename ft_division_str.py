@@ -18,4 +18,4 @@ def ft_division_str(a):
         c = c // 2 + 1
         x = a[c:z] + a[i:c]
         return x
-
+    
