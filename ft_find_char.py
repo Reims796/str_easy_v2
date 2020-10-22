@@ -1,23 +1,23 @@
-def ft_len(str):
-    a = 0
-    for i in str:
-        a += 1
-    return (a)
+def ft_len(a):
+    b = 0
+    for i in a:
+        b += 1
+    return (b)
 
 
-def ft_find_char(char, str):
-    d = ft_len(str)
-    k = 0
+def ft_find_char(char, a):
+    c = ft_len(a)
     i = 0
+    k = 0
     b = char
-    while d > i:
-        if str[i] == b:
+    while c > i:
+        if a[i] == b:
             k = k + 1
         i = i + 1
     if k == 1:
         i = 0
-        while d > i:
-            if str[i] == b:
+        while c > i:
+            if a[i] == b:
                 return (i)
             i = i + 1
     elif k >= 2:
@@ -28,11 +28,12 @@ def ft_find_char(char, str):
             if str[i] == b:
                 k = k + 1
                 if k == 1:
-                    i1 = i
+                    x = i
                 if k == max:
-                    i2 = i
+                    y = i
             i = i + 1
-        return i1, i2
+        return x, y
     else:
         return False
+
 
