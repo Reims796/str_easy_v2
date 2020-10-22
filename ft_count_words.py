@@ -21,4 +21,3 @@ def ft_count_words(a):
                 x = x + 1
             i = i + 1
         return x + 1
-    
