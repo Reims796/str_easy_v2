@@ -35,5 +35,3 @@ def ft_find_char(char, a):
         return x, y
     else:
         return False
-
-
